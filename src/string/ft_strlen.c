@@ -15,7 +15,7 @@
 **
 **  @param str	A null-terminated string.
 **  @returns	The number of bytes in the provided string, excluding the
-**				terminating null byte.
+**              terminating null byte.
 */
 
 int		ft_strlen(char *str)
