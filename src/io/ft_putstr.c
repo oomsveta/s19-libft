@@ -13,7 +13,7 @@
 #include "libft.h"
 
 /*
-**	Writes a string to stdout.
+**  Writes a string to stdout.
 **
 **  @param str	A null-terminated string.
 */

@@ -11,10 +11,10 @@
 /* ************************************************************************** */
 
 /*
-**	Calculates the length of a null-terminated string.
+**  Calculates the length of a null-terminated string.
 **
 **  @param str	A null-terminated string.
-**	@returns	The number of bytes in the provided string, excluding the
+**  @returns	The number of bytes in the provided string, excluding the
 **				terminating null byte.
 */
 
