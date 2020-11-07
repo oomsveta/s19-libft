@@ -17,6 +17,9 @@
 # include <string.h>
 # include <unistd.h>
 
+# define MAX_INT 2147483647
+# define MIN_INT -2147483648
+
 typedef char				t_i8;
 typedef unsigned char		t_u8;
 typedef short int			t_i16;
