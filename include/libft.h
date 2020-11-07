@@ -39,6 +39,7 @@ void	ft_putstr(char const *s);
 
 size_t	ft_strlen(const char *s);
 void	*ft_memset(void *s, int c, size_t n);
+void	ft_bzero(void *s, size_t n);
 
 /*
 **	CTYPE
