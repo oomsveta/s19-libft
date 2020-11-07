@@ -25,5 +25,6 @@ typedef int					t_i32;
 typedef unsigned int		t_u32;
 
 void	ft_putstr(char *str);
+int		ft_strlen(char *str);
 
 #endif
