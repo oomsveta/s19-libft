@@ -1,5 +1,5 @@
 NAME = libft.a
-SRC = src/io/ft_putstr.c
+SRC = src/io/ft_putstr.c src/string/ft_strlen.c
 OBJ  = ${SRC:c=o}
 
 CC = gcc
