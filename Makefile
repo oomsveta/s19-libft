@@ -14,7 +14,7 @@ ${NAME}: ${OBJ}
 	ar -rcs ${NAME} ${OBJ}
 
 clean:
-	rm -f */*.o
+	rm -f */*/*.o
 
 fclean: clean
 	rm -f ${NAME}
