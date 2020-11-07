@@ -15,14 +15,14 @@
 /*
 **  Writes a string to stdout.
 **
-**  @param str	A null-terminated string.
+**  @param s	A null-terminated string.
 */
 
-void	ft_putstr(char *str)
+void	ft_putstr(char const *s)
 {
-	if (!str)
+	if (!s)
 		write(STDOUT_FILENO, "(null)", 6);
 	else
-		while (*str)
-			write(STDOUT_FILENO, str++, 1);
+		while (*s)
+			write(STDOUT_FILENO, s++, 1);
 }

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_isodd.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lwicket <lwicket@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,21 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 /*
-**  Calculates the length of a null-terminated string.
+**	Tests if the provided number is odd.
 **
-**  @param s	A null-terminated string.
-**  @returns	The number of bytes in the provided string, excluding the
-**              terminating null byte.
+**	@param n	An integer.
+**	@returns	1 if the number is odd, otherwise 0.
 */
 
-size_t	ft_strlen(const char *s)
+t_u8	ft_isodd(int n)
 {
-	size_t ret;
-
-	ret = 0;
-	if (s)
-		while (*s++)
-			ret++;
-	return (ret);
+	return (n & 1);
 }

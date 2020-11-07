@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lwicket <lwicket@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,21 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 /*
-**  Calculates the length of a null-terminated string.
+**	Tests if the provided character is a decimal digit.
 **
-**  @param s	A null-terminated string.
-**  @returns	The number of bytes in the provided string, excluding the
-**              terminating null byte.
+**	@param c	A single character.
+**	@returns	1 if the character is a decimal digit, otherwise 0.
 */
 
-size_t	ft_strlen(const char *s)
+int	ft_isdigit(int c)
 {
-	size_t ret;
-
-	ret = 0;
-	if (s)
-		while (*s++)
-			ret++;
-	return (ret);
+	return (c >= '0' && c <= '9');
 }

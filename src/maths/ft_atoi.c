@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lwicket <lwicket@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,21 +10,27 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 /*
-**  Calculates the length of a null-terminated string.
+**	Converts a string to an integer.
 **
-**  @param s	A null-terminated string.
-**  @returns	The number of bytes in the provided string, excluding the
-**              terminating null byte.
+**	@param nptr	The string to convert.
+**	@returns	The converted value.
 */
 
-size_t	ft_strlen(const char *s)
+int ft_atoi(const char *nptr)
 {
-	size_t ret;
+	t_u8	is_negative;
+	int		ret;
 
+	is_negative = 0;
 	ret = 0;
-	if (s)
-		while (*s++)
-			ret++;
-	return (ret);
+	while (ft_isspace(*nptr))
+		nptr++;
+	if (*nptr == '-' || *nptr == '+')
+		*nptr++ == '-' && (is_negative = 1);
+	while (ft_isdigit(*nptr))
+		ret = ret * 10 + *nptr++ - '0';
+	return (is_negative ? -ret : ret);
 }

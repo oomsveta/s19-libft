@@ -27,7 +27,30 @@ typedef unsigned short int	t_u16;
 typedef int					t_i32;
 typedef unsigned int		t_u32;
 
-void	ft_putstr(char *str);
-int		ft_strlen(char *str);
+/*
+**	IO
+*/
+
+void	ft_putstr(char const *s);
+
+/*
+**	STRING
+*/
+
+size_t	ft_strlen(const char *s);
+
+/*
+**	CTYPE
+*/
+
+int		ft_isspace(int c);
+int		ft_isdigit(int c);
+
+/*
+**	MATHS
+*/
+
+int		ft_atoi(const char *nptr);
+t_u8	ft_isodd(int n);
 
 #endif

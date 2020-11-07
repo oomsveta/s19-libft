@@ -1,5 +1,5 @@
 NAME = libft.a
-SRC = src/io/ft_putstr.c src/string/ft_strlen.c
+SRC = src/io/ft_putstr.c src/string/ft_strlen.c src/ctype/ft_isdigit.c src/ctype/ft_isspace.c src/maths/ft_atoi.c src/maths/ft_isodd.c
 OBJ  = ${SRC:c=o}
 
 CC = gcc
@@ -14,7 +14,7 @@ ${NAME}: ${OBJ}
 	ar -rcs ${NAME} ${OBJ}
 
 clean:
-	rm -f */*/*.o
+	rm -f src/*/*.o
 
 fclean: clean
 	rm -f ${NAME}
