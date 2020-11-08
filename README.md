@@ -11,7 +11,7 @@ WIP
 - [ ] memcpy
 - [ ] memccpy
 - [ ] memmove
-- [ ] memchr
+- [x] memchr
 - [ ] memcmp
 - [x] strlen
 - [ ] strdup

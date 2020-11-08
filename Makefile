@@ -1,5 +1,5 @@
 NAME = libft.a
-SRC = src/io/ft_putstr.c src/string/ft_bzero.c src/string/ft_memset.c src/string/ft_strcat.c src/string/ft_strlen.c src/ctype/ft_isdigit.c src/ctype/is_space.c src/maths/ft_atoi.c src/maths/is_odd.c
+SRC  = src/io/ft_putstr.c src/string/ft_bzero.c src/string/ft_memchr.c src/string/ft_memset.c src/string/ft_strcat.c src/string/ft_strlen.c src/ctype/ft_isdigit.c src/ctype/is_space.c src/maths/ft_atoi.c src/maths/is_odd.c
 OBJ  = ${SRC:c=o}
 
 CC = gcc
