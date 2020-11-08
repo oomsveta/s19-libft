@@ -34,3 +34,8 @@ WIP
 - [ ] isprint
 - [ ] toupper
 - [ ] tolower
+
+## Custom additions
+
++ is_space
++ is_odd

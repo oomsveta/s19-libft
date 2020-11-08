@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isodd.c                                         :+:      :+:    :+:   */
+/*   is_odd.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lwicket <lwicket@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -19,7 +19,7 @@
 **	@returns	1 if the number is odd, otherwise 0.
 */
 
-t_u8	ft_isodd(int n)
+t_u8	is_odd(int n)
 {
 	return (n & 1);
 }

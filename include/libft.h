@@ -46,14 +46,14 @@ size_t	ft_strlen(const char *s);
 **	CTYPE
 */
 
-int		ft_isspace(int c);
 int		ft_isdigit(int c);
+t_u8	is_space(int c);
 
 /*
 **	MATHS
 */
 
 int		ft_atoi(const char *nptr);
-t_u8	ft_isodd(int n);
+t_u8	is_odd(int n);
 
 #endif

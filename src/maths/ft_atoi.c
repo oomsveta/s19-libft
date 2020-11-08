@@ -26,7 +26,7 @@ int ft_atoi(const char *nptr)
 
 	is_negative = 0;
 	ret = 0;
-	while (ft_isspace(*nptr))
+	while (is_space(*nptr))
 		nptr++;
 	if (*nptr == '-' || *nptr == '+')
 		*nptr++ == '-' && (is_negative = 1);
