@@ -37,5 +37,6 @@ WIP
 
 ## Custom additions
 
++ insertion_sort
 + is_space
 + is_odd

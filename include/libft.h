@@ -28,6 +28,12 @@ typedef int					t_i32;
 typedef unsigned int		t_u32;
 
 /*
+** ARRAY
+*/
+
+void	insertion_sort(int arr[], int len);
+
+/*
 **	IO
 */
 
