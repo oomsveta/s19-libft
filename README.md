@@ -29,7 +29,7 @@ Note that my repository is not fully-compliant with the subject requirements for
 - [x] strncmp
 - [ ] strnstr
 - [ ] strrchr
-- [ ] tolower
+- [x] tolower
 - [ ] toupper
 
 ## Custom additions
