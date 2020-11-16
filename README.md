@@ -1,8 +1,10 @@
 # Libft
+WIP
 
 Libft is the first project given to the students of 19 Coding School.
 
-WIP
+The subject is available [here](/subjects/en.subject.pdf).
+Note that my repository is not fully-compliant with the subject requirements for organizational purposes.
 
 ## Functions from libc
 
@@ -11,7 +13,7 @@ WIP
 - [ ] calloc
 - [x] isalnum
 - [x] isalpha
-- [ ] isascii
+- [x] isascii
 - [x] isdigit
 - [ ] isprint
 - [ ] memccpy
