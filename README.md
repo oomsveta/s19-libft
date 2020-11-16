@@ -20,7 +20,7 @@ Note that my repository is not fully-compliant with the subject requirements for
 - [x] memchr
 - [x] memcmp
 - [x] memcpy
-- [ ] memmove
+- [x] memmove
 - [x] memset
 - [ ] strchr
 - [x] strdup
