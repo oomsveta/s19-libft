@@ -18,14 +18,11 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 	const t_u8	*s_ptr;
 	t_u8		to_find;
 
-	if (n)
-	{
-		d_ptr = dest;
-		s_ptr = src;
-		to_find = c;
-		while (n--)
-			if ((*d_ptr++ = *s_ptr++) == to_find)
-				return (d_ptr);
-	}
+	d_ptr = dest;
+	s_ptr = src;
+	to_find = c;
+	while (n--)
+		if ((*d_ptr++ = *s_ptr++) == to_find)
+			return (d_ptr);
 	return (NULL);
 }
