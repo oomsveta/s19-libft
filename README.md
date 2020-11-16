@@ -30,7 +30,7 @@ Note that my repository is not fully-compliant with the subject requirements for
 - [ ] strnstr
 - [ ] strrchr
 - [x] tolower
-- [ ] toupper
+- [x] toupper
 
 ## Custom additions
 
