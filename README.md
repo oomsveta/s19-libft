@@ -8,13 +8,13 @@ WIP
 
 - [x] memset
 - [x] bzero
-- [ ] memcpy
+- [x] memcpy
 - [ ] memccpy
 - [ ] memmove
 - [x] memchr
 - [ ] memcmp
 - [x] strlen
-- [ ] strdup
+- [x] strdup
 - [ ] strcpy
 - [ ] strncpy
 - [x] strcat
