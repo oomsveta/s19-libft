@@ -9,7 +9,7 @@ WIP
 - [x] atoi
 - [x] bzero
 - [ ] calloc
-- [ ] isalnum
+- [x] isalnum
 - [x] isalpha
 - [ ] isascii
 - [x] isdigit
