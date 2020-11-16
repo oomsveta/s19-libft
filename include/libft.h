@@ -31,7 +31,7 @@ typedef unsigned int		t_u32;
 ** ARRAY
 */
 
-void	insertion_sort(int arr[], int len);
+void	lw_insrt_sort(int arr[], int len);
 
 /*
 **	IO
@@ -55,13 +55,13 @@ size_t	ft_strlen(const char *s);
 */
 
 int		ft_isdigit(int c);
-t_u8	is_space(int c);
+t_u8	lw_isspace(int c);
 
 /*
 **	MATHS
 */
 
 int		ft_atoi(const char *nptr);
-t_u8	is_odd(int n);
+t_u8	lw_isodd(int n);
 
 #endif

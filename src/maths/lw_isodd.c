@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   is_space.c                                         :+:      :+:    :+:   */
+/*   lw_isodd.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lwicket <lwicket@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -13,13 +13,13 @@
 #include "libft.h"
 
 /*
-**	Tests if the provided character is a whitespace.
+**	Tests if the provided number is odd.
 **
-**	@param c	A single character.
-**	@returns	1 if the character is a whitespace, otherwise 0.
+**	@param n	An integer.
+**	@returns	1 if the number is odd, otherwise 0.
 */
 
-t_u8	is_space(int c)
+t_u8	lw_isodd(int n)
 {
-	return (c == 32 || (c > 8 && c < 14));
+	return (n & 1);
 }
