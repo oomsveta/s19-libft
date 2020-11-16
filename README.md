@@ -16,7 +16,7 @@ Note that my repository is not fully-compliant with the subject requirements for
 - [x] isascii
 - [x] isdigit
 - [x] isprint
-- [ ] memccpy
+- [x] memccpy
 - [x] memchr
 - [ ] memcmp
 - [x] memcpy
