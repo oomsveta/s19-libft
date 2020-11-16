@@ -1,6 +1,6 @@
 # Libft
 
-Libft is the first project given to the students of School 19.
+Libft is the first project given to the students of 19 Coding School.
 
 WIP
 
@@ -10,7 +10,7 @@ WIP
 - [x] bzero
 - [ ] calloc
 - [ ] isalnum
-- [ ] isalpha
+- [x] isalpha
 - [ ] isascii
 - [x] isdigit
 - [ ] isprint
