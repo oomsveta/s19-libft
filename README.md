@@ -18,7 +18,7 @@ Note that my repository is not fully-compliant with the subject requirements for
 - [x] isprint
 - [x] memccpy
 - [x] memchr
-- [ ] memcmp
+- [x] memcmp
 - [x] memcpy
 - [ ] memmove
 - [x] memset
