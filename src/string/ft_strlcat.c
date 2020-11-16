@@ -30,6 +30,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 
 	d = dst;
 	s = src;
+	n = size;
 	while (n-- && *d)
 		d++;
 	len = dst - d;
@@ -39,11 +40,11 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	{
 		if (n)
 		{
-			*dest++ = *src;
+			*dst++ = *src;
 			n--;
 		}
 		src++;
 	}
-	*dest = 0;
+	*dst = 0;
 	return (len + (src - s));
 }
