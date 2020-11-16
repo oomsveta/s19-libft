@@ -19,7 +19,7 @@ WIP
 - [ ] strncpy
 - [x] strcat
 - [ ] strncat
-- [ ] strlcat
+- [x] strlcat
 - [ ] strchr
 - [ ] strrchr
 - [ ] strstr
