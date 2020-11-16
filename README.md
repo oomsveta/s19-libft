@@ -6,37 +6,33 @@ WIP
 
 ## Functions from libc
 
-- [x] memset
+- [x] atoi
 - [x] bzero
-- [x] memcpy
+- [ ] calloc
+- [ ] isalnum
+- [ ] isalpha
+- [ ] isascii
+- [x] isdigit
+- [ ] isprint
 - [ ] memccpy
-- [ ] memmove
 - [x] memchr
 - [ ] memcmp
-- [x] strlen
-- [x] strdup
-- [ ] strcpy
-- [ ] strncpy
-- [x] strcat
-- [ ] strncat
-- [x] strlcat
+- [x] memcpy
+- [ ] memmove
+- [x] memset
 - [ ] strchr
-- [ ] strrchr
-- [ ] strstr
-- [ ] strnstr
-- [ ] strcmp
+- [x] strdup
+- [x] strlcat
+- [x] strlen
 - [ ] strncmp
-- [x] atoi
-- [ ] isalpha
-- [x] isdigit
-- [ ] isalnum
-- [ ] isascii
-- [ ] isprint
-- [ ] toupper
+- [ ] strnstr
+- [ ] strrchr
 - [ ] tolower
+- [ ] toupper
 
 ## Custom additions
 
 + lw_insrt_sort
 + lw_isspace
 + lw_isodd
++ lw_strcat
