@@ -24,7 +24,7 @@ WIP
 - [x] strdup
 - [x] strlcat
 - [x] strlen
-- [ ] strncmp
+- [x] strncmp
 - [ ] strnstr
 - [ ] strrchr
 - [ ] tolower
