@@ -56,6 +56,7 @@ char	*lw_strcat(char *dest, const char *src);
 **	CTYPE
 */
 
+int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 t_u8	lw_isspace(int c);
