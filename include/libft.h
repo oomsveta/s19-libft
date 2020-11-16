@@ -64,6 +64,7 @@ int		ft_isdigit(int c);
 int		ft_isprint(int c);
 t_u8	lw_isspace(int c);
 int		ft_tolower(int c);
+int		ft_toupper(int c);
 
 /*
 **	MATHS
