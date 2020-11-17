@@ -21,16 +21,16 @@
 
 int	ft_atoi(const char *nptr)
 {
-	t_u8	is_negative;
+	t_i8	sign;
 	int		ret;
 
-	is_negative = 0;
+	sign = 1;
 	ret = 0;
 	while (lw_isspace(*nptr))
 		nptr++;
 	if (*nptr == '-' || *nptr == '+')
-		*nptr++ == '-' && (is_negative = 1);
+		*nptr++ == '-' && (sign = -1);
 	while (ft_isdigit(*nptr))
 		ret = ret * 10 + *nptr++ - '0';
-	return (is_negative ? -ret : ret);
+	return (ret * sign);
 }
