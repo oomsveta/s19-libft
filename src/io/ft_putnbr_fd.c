@@ -20,7 +20,7 @@ static void	print_digit(unsigned int n, int fd)
 	write(fd, &n, 1);
 }
 
-void	ft_putnbr_fd(int n, int fd)
+void		ft_putnbr_fd(int n, int fd)
 {
 	if (n < 0)
 		write(fd, "-", 1);
