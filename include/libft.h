@@ -40,6 +40,12 @@ void	lw_insrt_sort(int arr[], int len);
 void	ft_putstr(char const *s);
 
 /*
+**  STDLIB
+*/
+
+void	*ft_calloc(size_t nmemb, size_t size);
+
+/*
 **	STRING
 */
 
