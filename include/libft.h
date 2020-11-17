@@ -75,6 +75,7 @@ int		ft_toupper(int c);
 */
 
 int		ft_atoi(const char *nptr);
+char	*ft_itoa(int n);
 t_u8	lw_isodd(int n);
 
 #endif
