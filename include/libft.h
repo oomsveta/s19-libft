@@ -38,6 +38,7 @@ void	lw_insrt_sort(int arr[], int len);
 */
 
 void	ft_putchar_fd(char c, int fd);
+void	ft_putendl_fd(char *s, int fd);
 void	ft_putstr(char const *s);
 void	ft_putstr_fd(char *s, int fd);
 
