@@ -25,7 +25,7 @@ static t_u8	get_nbr_of_digits(t_u32 n)
 	return (i);
 }
 
-char	*ft_itoa(int n)
+char		*ft_itoa(int n)
 {
 	char	*ret;
 	t_u8	is_negative;

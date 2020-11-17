@@ -23,10 +23,10 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	const char *d;
-	const char *s;
-	size_t len;
-	size_t n;
+	const char	*d;
+	const char	*s;
+	size_t		len;
+	size_t		n;
 
 	d = dst;
 	s = src;

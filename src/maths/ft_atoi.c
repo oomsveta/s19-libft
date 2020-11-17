@@ -19,7 +19,7 @@
 **	@returns	The converted value.
 */
 
-int ft_atoi(const char *nptr)
+int	ft_atoi(const char *nptr)
 {
 	t_u8	is_negative;
 	int		ret;
