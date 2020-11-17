@@ -10,7 +10,7 @@ Note that my repository is not fully-compliant with the subject requirements for
 
 - [x] atoi
 - [x] bzero
-- [ ] calloc
+- [x] calloc
 - [x] isalnum
 - [x] isalpha
 - [x] isascii
