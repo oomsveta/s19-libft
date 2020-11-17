@@ -22,7 +22,7 @@ Note that my repository is not fully-compliant with the subject requirements for
 - [x] memcpy
 - [x] memmove
 - [x] memset
-- [ ] strchr
+- [x] strchr
 - [x] strdup
 - [x] strlcat
 - [x] strlen
