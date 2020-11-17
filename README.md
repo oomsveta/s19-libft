@@ -41,7 +41,7 @@ Note that my repository is not fully-compliant with the subject requirements for
 - [x] putstr_fd
 - [ ] split
 - [ ] strjoin
-- [ ] strmapi
+- [x] strmapi
 - [ ] strtrim
 - [ ] substr
 
