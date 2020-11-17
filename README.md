@@ -32,6 +32,19 @@ Note that my repository is not fully-compliant with the subject requirements for
 - [x] tolower
 - [x] toupper
 
+## Additional functions
+
+- [x] itoa
+- [ ] putchar_fd
+- [ ] putendl_fd
+- [ ] putnbr_fd
+- [ ] putstr_fd
+- [ ] split
+- [ ] strjoin
+- [ ] strmapi
+- [ ] strtrim
+- [ ] substr
+
 ## Custom additions
 
 + lw_insrt_sort
