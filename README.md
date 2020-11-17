@@ -37,7 +37,7 @@ Note that my repository is not fully-compliant with the subject requirements for
 - [x] itoa
 - [x] putchar_fd
 - [x] putendl_fd
-- [ ] putnbr_fd
+- [x] putnbr_fd
 - [x] putstr_fd
 - [ ] split
 - [ ] strjoin
