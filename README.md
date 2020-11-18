@@ -51,3 +51,4 @@ Note that my repository is not fully-compliant with the subject requirements for
 + lw_isspace
 + lw_isodd
 + lw_strcat
++ lw_trim
