@@ -12,14 +12,34 @@
 
 #include "libft.h"
 
-// TODO
-
-static size_t	count_words(char *s, char c)
+static size_t	count_words(const char *s, char c)
 {
-	return (0);
+	size_t ret;
+
+	ret = 1;
+	if (s)
+		while (*s)
+			*s++ == c && ret++;
+	return (ret);
 }
 
-char	**ft_split(char const *s, char c)
+char			**ft_split(char const *s, char c)
 {
-	return (NULL);
+	char	**ret;
+	size_t	len;
+	int		i;
+	int		j;
+
+	len = count_words((const char *)s, c);
+	if (!(ret = malloc(sizeof(char *) * (len + 1))))
+		return (NULL);
+	ret[len] = NULL;
+	i = ft_strlen(s);
+	while ((j = i--) >= 0)
+	{
+		while (i >= 0 && s[i] != c)
+			i--;
+		ret[--len] = ft_substr(s, i + 1, j - i - 1);
+	}
+	return (ret);
 }
