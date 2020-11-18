@@ -40,7 +40,7 @@ Note that my repository is not fully-compliant with the subject requirements for
 - [x] putnbr_fd
 - [x] putstr_fd
 - [ ] split
-- [ ] strjoin
+- [x] strjoin
 - [x] strmapi
 - [ ] strtrim
 - [x] substr
