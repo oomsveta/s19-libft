@@ -33,7 +33,26 @@ typedef unsigned int		t_u32;
 void	lw_insrt_sort(int arr[], int len);
 
 /*
-**	IO
+**	CTYPE
+*/
+
+int		ft_isalnum(int c);
+int		ft_isalpha(int c);
+int		ft_isascii(int c);
+int		ft_isdigit(int c);
+int		ft_isprint(int c);
+t_u8	lw_isspace(int c);
+int		ft_tolower(int c);
+int		ft_toupper(int c);
+
+/*
+**	MATHS
+*/
+
+t_u8	lw_isodd(int n);
+
+/*
+**	STDIO
 */
 
 void	ft_putchar_fd(char c, int fd);
@@ -46,7 +65,9 @@ void	ft_putstr_fd(char *s, int fd);
 **  STDLIB
 */
 
+int		ft_atoi(const char *nptr);
 void	*ft_calloc(size_t nmemb, size_t size);
+char	*ft_itoa(int n);
 
 /*
 **	STRING
@@ -71,26 +92,5 @@ char	*ft_strrchr(const char *s, int c);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*lw_strcat(char *dest, const char *src);
-
-/*
-**	CTYPE
-*/
-
-int		ft_isalnum(int c);
-int		ft_isalpha(int c);
-int		ft_isascii(int c);
-int		ft_isdigit(int c);
-int		ft_isprint(int c);
-t_u8	lw_isspace(int c);
-int		ft_tolower(int c);
-int		ft_toupper(int c);
-
-/*
-**	MATHS
-*/
-
-int		ft_atoi(const char *nptr);
-char	*ft_itoa(int n);
-t_u8	lw_isodd(int n);
 
 #endif
