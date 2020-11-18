@@ -26,6 +26,12 @@ typedef unsigned short int	t_u16;
 typedef int					t_i32;
 typedef unsigned int		t_u32;
 
+typedef struct	s_list
+{
+	void			*content;
+	struct s_list	*next;
+}				t_list;
+
 /*
 ** ARRAY
 */
