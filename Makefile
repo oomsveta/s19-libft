@@ -1,5 +1,5 @@
 NAME = libft.a
-SRC  = src/array/lw_insrt_sort.c src/io/ft_putstr.c src/string/ft_bzero.c src/string/ft_memccpy.c src/string/ft_memchr.c src/string/ft_memcmp.c src/string/ft_memcpy.c src/string/ft_memmove.c src/string/ft_memset.c src/string/lw_strcat.c src/string/ft_strchr.c src/string/ft_strdup.c src/string/ft_strncmp.c src/string/ft_strlcat.c src/string/ft_strlen.c src/string/ft_strrchr.c src/ctype/ft_isalnum.c src/ctype/ft_isalpha.c src/ctype/ft_isascii.c src/ctype/ft_isdigit.c src/ctype/ft_isprint.c src/ctype/ft_tolower.c src/ctype/ft_toupper.c src/ctype/lw_isspace.c src/maths/ft_atoi.c src/maths/ft_itoa.c src/maths/lw_isodd.c src/stdlib/ft_calloc.c src/io/ft_putchar_fd.c src/io/ft_putstr_fd.c src/io/ft_putendl_fd.c src/io/ft_putnbr_fd.c src/string/ft_strmapi.c src/string/ft_substr.c src/string/ft_strjoin.c src/string/ft_strtrim.c
+SRC  = ${wildcard src/*/*.c}
 OBJ  = ${SRC:c=o}
 
 CC = gcc
