@@ -42,7 +42,7 @@ Note that my repository is not fully-compliant with the subject requirements for
 - [ ] split
 - [x] strjoin
 - [x] strmapi
-- [ ] strtrim
+- [x] strtrim
 - [x] substr
 
 ## Custom additions
