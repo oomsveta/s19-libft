@@ -52,7 +52,7 @@ Note that my repository is not fully-compliant with the subject requirements for
 - [ ] lstclear
 - [ ] lstdelone
 - [ ] lstiter
-- [ ] lstlast
+- [x] lstlast
 - [ ] lstmap
 - [x] lstnew
 - [x] lstsize
