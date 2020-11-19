@@ -55,7 +55,7 @@ Note that my repository is not fully-compliant with the subject requirements for
 - [ ] lstlast
 - [ ] lstmap
 - [x] lstnew
-- [ ] lstsize
+- [x] lstsize
 
 ## Custom additions
 
