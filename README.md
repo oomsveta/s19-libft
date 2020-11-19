@@ -51,7 +51,7 @@ Note that my repository is not fully-compliant with the subject requirements for
 - [x] lstadd_front
 - [x] lstclear
 - [x] lstdelone
-- [ ] lstiter
+- [x] lstiter
 - [x] lstlast
 - [ ] lstmap
 - [x] lstnew
