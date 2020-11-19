@@ -19,7 +19,8 @@ static size_t	count_words(const char *s, char c)
 	ret = 1;
 	if (s)
 		while (*s)
-			*s++ == c && ret++;
+			if (*s++ == c)
+				ret++;
 	return (ret);
 }
 
