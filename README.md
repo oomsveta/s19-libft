@@ -49,7 +49,7 @@ Note that my repository is not fully-compliant with the subject requirements for
 
 - [x] lstadd_back
 - [x] lstadd_front
-- [ ] lstclear
+- [x] lstclear
 - [x] lstdelone
 - [ ] lstiter
 - [x] lstlast
