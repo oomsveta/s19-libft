@@ -45,6 +45,18 @@ Note that my repository is not fully-compliant with the subject requirements for
 - [x] strtrim
 - [x] substr
 
+## Bonus functions
+
+- [ ] lstadd_back
+- [ ] lstadd_front
+- [ ] lstclear
+- [ ] lstdelone
+- [ ] lstiter
+- [ ] lstlast
+- [ ] lstmap
+- [x] lstnew
+- [ ] lstsize
+
 ## Custom additions
 
 + lw_insrt_sort
