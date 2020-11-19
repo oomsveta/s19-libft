@@ -48,7 +48,7 @@ Note that my repository is not fully-compliant with the subject requirements for
 ## Bonus functions
 
 - [ ] lstadd_back
-- [ ] lstadd_front
+- [x] lstadd_front
 - [ ] lstclear
 - [ ] lstdelone
 - [ ] lstiter
