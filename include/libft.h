@@ -55,6 +55,7 @@ int		ft_toupper(int c);
 **	LINKED_LIST
 */
 
+void	ft_lstadd_front(t_list **lst, t_list *new);
 t_list	*ft_lstnew(void *content);
 
 /*
