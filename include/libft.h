@@ -52,6 +52,12 @@ int		ft_tolower(int c);
 int		ft_toupper(int c);
 
 /*
+**	LINKED_LIST
+*/
+
+t_list	*ft_lstnew(void *content);
+
+/*
 **	MATHS
 */
 
