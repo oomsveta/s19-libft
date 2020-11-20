@@ -12,12 +12,23 @@
 
 #include "libft.h"
 
+/*
+**	Compares the two strings s1 and s2. The locale is not taken into account.
+**	The comparison is done using unsigned characters.
+*/
+
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
+	unsigned char c1;
+	unsigned char c2;
+
 	while (n--)
 	{
-		if (*s1 != *s2++)
-			return (*s1 - *--s2);
+		c1 = (unsigned)*s1;
+		c2 = (unsigned)*s2;
+		if (c1 != c2)
+			return (c1 - c2);
+		s2++;
 		if (!*s1++)
 			break ;
 	}
