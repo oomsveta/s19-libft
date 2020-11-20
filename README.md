@@ -25,7 +25,7 @@ Note that my repository is not fully-compliant with the subject requirements for
 - [x] strchr
 - [x] strdup
 - [x] strlcat
-- [ ] strlcpy
+- [x] strlcpy
 - [x] strlen
 - [x] strncmp
 - [x] strnstr
