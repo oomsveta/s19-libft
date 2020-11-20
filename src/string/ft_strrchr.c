@@ -12,6 +12,17 @@
 
 #include "libft.h"
 
+/*
+**	Finds the last occurrence of the character 'c' in the string 's'.
+**
+**	@param s	The string to search into.
+**	@param c	The character to search for.
+**	@returns	A pointer to the matched character or NULL if the character is
+**				not found. The terminating null byte is considered part of the
+**				string, so that if c is specified as '\0', returns a pointer to
+**				the terminator.
+*/
+
 char	*ft_strrchr(const char *s, int c)
 {
 	char *ret;
@@ -23,5 +34,5 @@ char	*ft_strrchr(const char *s, int c)
 			ret = (char *)s;
 		s++;
 	}
-	return (ret);
+	return (c ? ret : (char *)s);
 }
