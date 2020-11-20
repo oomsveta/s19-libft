@@ -27,7 +27,7 @@ Note that my repository is not fully-compliant with the subject requirements for
 - [x] strlcat
 - [x] strlen
 - [x] strncmp
-- [ ] strnstr
+- [x] strnstr
 - [x] strrchr
 - [x] tolower
 - [x] toupper
