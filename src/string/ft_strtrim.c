@@ -21,6 +21,15 @@ static t_u8	is_in_set(char c, const char *set)
 	return (0);
 }
 
+/*
+**	Creates a copy of 's1' with the characters specified in 'set' removed
+**	from the beginning and the end of the string.
+**
+**	@param s1	The string to be trimmed.
+**	@param set	The reference set of characters to trim.
+**	@returns	The trimmed string. NULL if the allocation fails.
+*/
+
 char		*ft_strtrim(char const *s1, char const *set)
 {
 	char	*start;
@@ -32,7 +41,8 @@ char		*ft_strtrim(char const *s1, char const *set)
 	while (is_in_set(*start, set))
 		start++;
 	end = (char *)s1 + ft_strlen(s1) - 1;
-	while (is_in_set(*end, set))
-		end--;
+	if (start < end)
+		while (is_in_set(*end, set))
+			end--;
 	return (ft_substr(s1, start - s1, end - start + 1));
 }
