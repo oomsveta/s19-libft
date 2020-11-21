@@ -62,6 +62,7 @@ Note that my repository is not fully-compliant with the subject requirements for
 
 + lw_insrt_sort
 + lw_isspace
++ lw_isxdigit
 + lw_isodd
 + lw_strcat
 + lw_streq
