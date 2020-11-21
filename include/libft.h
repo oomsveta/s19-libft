@@ -52,6 +52,7 @@ int		ft_toupper(int c);
 
 const char	*skip_whitespaces(const char **ptr);
 char		*trim(const char *s);
+char		*trim_left(const char *s);
 
 /*
 **	LINKED_LIST

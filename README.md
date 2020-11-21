@@ -66,3 +66,4 @@ Note that my repository is not fully-compliant with the subject requirements for
 + lw_strtol
 + skip_whitespaces
 + trim
++ trim_left
