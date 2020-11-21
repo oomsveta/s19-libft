@@ -17,7 +17,7 @@ static t_i8	get_index_in_base(char d, int base, char *digits)
 	char	*ptr;
 	t_i8	index;
 
-	ptr = ft_strchr(digits, d);
+	ptr = ft_strchr(digits, d | 32);
 	index = ptr - digits;
 	return (ptr && index < base ? index : -1);
 }
