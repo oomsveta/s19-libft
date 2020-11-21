@@ -26,8 +26,7 @@ int	ft_atoi(const char *nptr)
 
 	sign = 1;
 	ret = 0;
-	while (lw_isspace(*nptr))
-		nptr++;
+	skip_whitespaces(&nptr);
 	if (*nptr == '-' || *nptr == '+')
 		*nptr++ == '-' && (sign = -1);
 	while (ft_isdigit(*nptr))

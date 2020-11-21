@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lw_trim.c                                          :+:      :+:    :+:   */
+/*   trim.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lwicket <lwicket@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,14 +12,13 @@
 
 #include "libft.h"
 
-char	*lw_trim(const char *s)
+char	*trim(const char *s)
 {
 	int	i;
 
 	if (!s)
 		return (NULL);
-	while (lw_isspace(*s))
-		s++;
+	skip_whitespaces(&s);
 	i = ft_strlen(s) - 1;
 	if (*s)
 		while (lw_isspace(s[i]))

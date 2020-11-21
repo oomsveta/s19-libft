@@ -55,6 +55,13 @@ int		ft_tolower(int c);
 int		ft_toupper(int c);
 
 /*
+**	EXTRA
+*/
+
+const char	*skip_whitespaces(const char **ptr);
+char		*trim(const char *s);
+
+/*
 **	LINKED_LIST
 */
 
@@ -117,6 +124,5 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*lw_strcat(char *dest, const char *src);
 t_u8	lw_streq(const char *s1, const char *s2);
-char	*lw_trim(const char *s);
 
 #endif
