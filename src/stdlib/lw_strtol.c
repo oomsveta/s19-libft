@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-t_i8		get_index_in_base(char d, int base, char *digits)
+static t_i8		get_index_in_base(char d, int base, char *digits)
 {
 	char	*ptr;
 	t_i8	index;
@@ -22,7 +22,7 @@ t_i8		get_index_in_base(char d, int base, char *digits)
 	return (ptr && index < base ? index : -1);
 }
 
-void		check_base_literal(const char **nptr, int *base)
+static void		check_base_literal(const char **nptr, int *base)
 {
 	if (**nptr != '0')
 		return ;
@@ -39,7 +39,7 @@ void		check_base_literal(const char **nptr, int *base)
 		*base = 8;
 }
 
-long int	lw_strtol(const char *nptr, char **endptr, int base)
+long int		lw_strtol(const char *nptr, char **endptr, int base)
 {
 	long int	ret;
 	t_i8		sign;
