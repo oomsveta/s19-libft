@@ -33,12 +33,6 @@ typedef struct	s_list
 }				t_list;
 
 /*
-** ARRAY
-*/
-
-void	lw_insrt_sort(int arr[], int len);
-
-/*
 **	CTYPE
 */
 
@@ -76,7 +70,6 @@ int		ft_lstsize(t_list *lst);
 **	MATHS
 */
 
-t_u8	lw_isodd(int n);
 
 /*
 **	STDIO
@@ -122,6 +115,5 @@ char	*ft_strrchr(const char *s, int c);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*lw_strcat(char *dest, const char *src);
-t_u8	lw_streq(const char *s1, const char *s2);
 
 #endif

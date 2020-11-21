@@ -60,12 +60,9 @@ Note that my repository is not fully-compliant with the subject requirements for
 
 ## Custom additions
 
-+ lw_insrt_sort
 + lw_isspace
 + lw_isxdigit
-+ lw_isodd
 + lw_strcat
-+ lw_streq
 + lw_strtol
 + skip_whitespaces
 + trim
