@@ -50,6 +50,7 @@ int		ft_toupper(int c);
 **	EXTRA
 */
 
+char		*repeat(const char *str, int count);
 const char	*skip_whitespaces(const char **ptr);
 char		*trim(const char *s);
 char		*trim_end(const char *s);

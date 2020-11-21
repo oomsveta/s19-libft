@@ -64,6 +64,7 @@ Note that my repository is not fully-compliant with the subject requirements for
 + lw_isxdigit
 + lw_strcat
 + lw_strtol
++ repeat
 + skip_whitespaces
 + trim
 + trim_end
