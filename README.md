@@ -33,19 +33,18 @@ Note that my repository is not fully-compliant with the subject requirements for
 - [x] tolower
 - [x] toupper
 
-<details>
-    <summary>## Additional functions</summary>
-    - [x] itoa
-    - [x] putchar_fd
-    - [x] putendl_fd
-    - [x] putnbr_fd
-    - [x] putstr_fd
-    - [x] split
-    - [x] strjoin
-    - [x] strmapi
-    - [x] strtrim
-    - [x] substr
-</details>
+## Additional functions
+
+- [x] itoa
+- [x] putchar_fd
+- [x] putendl_fd
+- [x] putnbr_fd
+- [x] putstr_fd
+- [x] split
+- [x] strjoin
+- [x] strmapi
+- [x] strtrim
+- [x] substr
 
 ## Bonus functions
 
