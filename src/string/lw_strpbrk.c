@@ -14,8 +14,9 @@
 
 char	*lw_strpbrk(const char *s, const char *accept)
 {
-	while (*s)
-		if (ft_strchr(accept, *s++))
-			return ((char *)--s);
+	if (s)
+		while (*s)
+			if (ft_strchr(accept, *s++))
+				return ((char *)--s);
 	return (NULL);
 }
