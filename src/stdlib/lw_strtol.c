@@ -17,7 +17,7 @@ static t_i8	get_index_in_base(char d, int base, char *digits)
 	char	*ptr;
 	t_i8	index;
 
-	ptr = ft_strchr(digits, d | 32);
+	ptr = ft_strchr(digits, d | 0x20);
 	index = ptr - digits;
 	return (ptr && index < base ? index : -1);
 }
@@ -27,7 +27,7 @@ static void	check_base_literal(const char **nptr, int *base)
 	if (**nptr != '0')
 		return ;
 	(*nptr)++;
-	if ((**nptr | 32) == 'x')
+	if ((**nptr | 0x20) == 'x')
 	{
 		if (*base == 16 || *base == 0)
 		{
