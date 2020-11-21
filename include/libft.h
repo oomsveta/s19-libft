@@ -15,9 +15,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-
-# define MAX_INT 2147483647
-# define MIN_INT -2147483648
+# include <limits.h>
 
 typedef char					t_i8;
 typedef unsigned char			t_u8;
@@ -94,9 +92,10 @@ void	ft_putstr_fd(char *s, int fd);
 **  STDLIB
 */
 
-int		ft_atoi(const char *nptr);
-void	*ft_calloc(size_t nmemb, size_t size);
-char	*ft_itoa(int n);
+int			ft_atoi(const char *nptr);
+void		*ft_calloc(size_t nmemb, size_t size);
+char		*ft_itoa(int n);
+long int	lw_strtol(const char *nptr, char **endptr, int base);
 
 /*
 **	STRING
