@@ -21,16 +21,5 @@
 
 int	ft_atoi(const char *nptr)
 {
-	t_i8	sign;
-	t_i64	ret;
-
-	sign = 1;
-	ret = 0;
-	skip_whitespaces(&nptr);
-	if (*nptr == '-' || *nptr == '+')
-		*nptr++ == '-' && (sign = -1);
-	while (ft_isdigit(*nptr))
-		if ((ret = ret * 10 + *nptr++ - '0') < 0)
-			return (~sign ? -1 : 0);
-	return (ret * sign);
+	return (lw_strtol(nptr, NULL, 10));
 }
