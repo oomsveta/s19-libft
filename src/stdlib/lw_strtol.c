@@ -56,7 +56,7 @@ long int	lw_strtol(const char *nptr, char **endptr, int base)
 	if (base < 2 || base > 36)
 		return (0);
 	while (~(i = get_index_in_base(*nptr++, base, digits)))
-		if ((ret = (ret * base) + i) < 0)
+		if ((ret = ret * base + i) < 0)
 		{
 			ret = (~sign ? LONG_MAX : LONG_MIN);
 			break ;
