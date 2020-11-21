@@ -21,7 +21,8 @@ char	*lw_trim(const char *s)
 	while (lw_isspace(*s))
 		s++;
 	i = ft_strlen(s) - 1;
-	while (lw_isspace(s[i]))
-		i--;
+	if (*s)
+		while (lw_isspace(s[i]))
+			i--;
 	return (ft_substr(s, 0, i + 1));
 }
