@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int		ft_tolower(int c)
+int	ft_tolower(int c)
 {
 	return (ft_isalpha(c) ? c | 32 : c);
 }

@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static t_u8	is_in_set(char c, const char *set)
+static int	is_in_set(char c, const char *set)
 {
 	if (set)
 		while (*set)

@@ -19,7 +19,7 @@
 **	@returns	1 if the character is a whitespace, otherwise 0.
 */
 
-t_u8	lw_isspace(int c)
+int	lw_isspace(int c)
 {
 	return (c == 32 || (c > 8 && c < 14));
 }

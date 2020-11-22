@@ -22,13 +22,13 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	t_u8 *s;
-	t_u8 *d;
+	unsigned char	*s;
+	unsigned char	*d;
 
 	if (dest == src)
 		return (dest);
-	s = (t_u8 *)src;
-	d = (t_u8 *)dest;
+	s = (unsigned char *)src;
+	d = (unsigned char *)dest;
 	while (n--)
 		d[n] = s[n];
 	return (dest);

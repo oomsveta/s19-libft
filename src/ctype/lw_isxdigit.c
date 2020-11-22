@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-t_u8	lw_isxdigit(int c)
+int	lw_isxdigit(int c)
 {
 	return ((c >= '0' && c <= '9') || ((c |= 32) >= 'a' && c <= 'f'));
 }

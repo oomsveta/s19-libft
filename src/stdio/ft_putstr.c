@@ -21,8 +21,8 @@
 void	ft_putstr(char const *s)
 {
 	if (!s)
-		write(STDOUT_FILENO, "(null)", 6);
+		write(STDOUT, "(null)", 6);
 	else
 		while (*s)
-			write(STDOUT_FILENO, s++, 1);
+			write(STDOUT, s++, 1);
 }

@@ -12,9 +12,9 @@
 
 #include "libft.h"
 
-static t_u8	get_nbr_of_digits(t_u32 n)
+static unsigned char	get_nbr_of_digits(unsigned int n)
 {
-	t_u8 i;
+	unsigned char i;
 
 	i = 1;
 	while (n > 9)
@@ -25,12 +25,12 @@ static t_u8	get_nbr_of_digits(t_u32 n)
 	return (i);
 }
 
-char		*ft_itoa(int n)
+char					*ft_itoa(int n)
 {
-	char	*ret;
-	t_u8	is_negative;
-	t_u8	len;
-	t_u32	un;
+	char			*ret;
+	unsigned char	is_negative;
+	unsigned char	len;
+	unsigned int	un;
 
 	is_negative = n < 0;
 	un = is_negative ? -n : n;
