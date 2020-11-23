@@ -31,7 +31,7 @@ static size_t	count_words(const char *s, char c)
 	return (ret);
 }
 
-static void		**free_all(char **arr, int i)
+static void		*free_all(char **arr, int i)
 {
 	while (i--)
 		free(arr[i]);
