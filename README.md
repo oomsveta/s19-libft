@@ -54,7 +54,7 @@ Note that my repository is not fully-compliant with the subject requirements for
 - [x] lstdelone
 - [x] lstiter
 - [x] lstlast
-- [ ] lstmap
+- [x] lstmap
 - [x] lstnew
 - [x] lstsize
 
