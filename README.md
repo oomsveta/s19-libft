@@ -63,6 +63,7 @@ Note that my repository is not fully-compliant with the subject requirements for
 + lw_isspace
 + lw_isxdigit
 + lw_strcat
++ lw_strcspn
 + lw_strpbrk
 + lw_strspn
 + lw_strtol

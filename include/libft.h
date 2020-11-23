@@ -110,6 +110,7 @@ size_t			ft_strlcat(char *dst, const char *src, size_t size);
 size_t			ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t			ft_strlen(const char *s);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+size_t			lw_strcspn(const char *s, const char *charset);
 char			*lw_strpbrk(const char *s, const char *accept);
 char			*ft_strrchr(const char *s, int c);
 size_t			lw_strspn(const char *s, const char *accept);
