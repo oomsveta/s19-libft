@@ -24,8 +24,8 @@ static size_t	count_words(const char *s, char c)
 	while (*s)
 		if (*s++ != c)
 		{
-			while (*s++ != c)
-				;
+			while (*s != c && *s)
+				s++;
 			ret++;
 		}
 	return (ret);
@@ -55,9 +55,9 @@ char			**ft_split(char const *s, char c)
 		start = s;
 		if (*s++ != c)
 		{
-			while (*s++ != c)
-				;
-			if (!(ret[i] = ft_substr(start, 0, s - start - 1)))
+			while (*s != c && *s)
+				s++;
+			if (!(ret[i] = ft_substr(start, 0, s - start)))
 				return (free_all(ret, i));
 			i++;
 		}
