@@ -13,12 +13,13 @@
 #include "libft.h"
 
 /*
-**	Appends the null-terminated string src to the end of dst.
+**	Appends the null-terminated string src to the end of dst. It will append at
+**	most size - strlen(dst) - 1 bytes, NUL-terminating the result.
 **
 **	@param dst	The destination string.
 **	@param src	The source string.
-**	@param size	The length of the string to create.
-**	@returns	The length of the string it tried to create.
+**	@param size	The size of the dst buffer.
+**	@returns	The initial length of dst plus the length of src.
 */
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
@@ -30,9 +31,9 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 
 	d = dst;
 	s = src;
-	n = size;
-	while (n-- && *d)
-		d++;
+	n = size + 1;
+	while (--n && *dst)
+		dst++;
 	len = dst - d;
 	if (!n--)
 		return (len + ft_strlen(src));
