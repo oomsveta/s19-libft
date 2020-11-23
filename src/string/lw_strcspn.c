@@ -18,7 +18,7 @@ size_t	lw_strcspn(const char *s, const char *charset)
 
 	ret = 0;
 	if (!s || !charset)
-        return (ret);
+		return (ret);
 	while (*s)
 	{
 		if (ft_strchr(charset, *s++))
