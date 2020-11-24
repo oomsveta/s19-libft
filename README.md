@@ -34,13 +34,17 @@ Some flags, `-fsanitize=address` for instance, silently add functions to your co
 
 If you use a function that is not specified by the subject requirements nor a static function, the Moulinette will detect your function call as cheat, even if you definitely reimplement this function from scratch according to the guidelines (#PrayForMyLibft 🙏)
 
+### ✅ Atoi: be aware of the overflows
+
+The behavior of atoi in case of overflow is not an undefined behavior: the atoi function as specified in the standard returns the result of the asciiz to integer conversion proceeded by the strtol function, which has a precise behavior in case of overflow. You can detect a variable is overflowing by checking that its value is still positive. If the value becomes negative, then there is an overflow, and you can determine if it's a positive or a negative overflow by considering the sign.
+
 ### ✅ Prevent every function from crashing when null pointer is provided as an input
 
 Some overcautious, opinionated and nonfactual proofreaders have a very personal conception of what is an undefined behavior. To avoid nasty surprises, you must always define a behavior which prevents your functions from crash in such a case.
 
-### ✅ Atoi: be aware of the overflows
+### ✅ Don't follow the previous recommendation
 
-The behavior of atoi in case of overflow is not an undefined behavior: the atoi function as specified in the standard returns the result of the asciiz to integer conversion proceeded by the strtol function, which has a precise behavior in case of overflow. You can detect a variable is overflowing by checking that its value is still positive. If the value becomes negative, then there is an overflow, and you can determine if it's a positive or a negative overflow by considering the sign.
+Some overcautious, opinionated and nonfactual proofreaders have a very personal conception of what is an undefined behavior, and will penalize you when your code doesn't crash whereas the same function from libc does it… so, gl hf 🤞
 
 ## Content of the Libft
 
