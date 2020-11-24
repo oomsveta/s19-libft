@@ -21,6 +21,24 @@ Functions without prefix are just custom functions not based on any specificatio
 
 I strictly follow the *Norm* enforced by the school. The Norm is a laundry list of coding conventions that students have to follow to the letter on pain of seeing their work sanctioned with a 0. The Norm forbids for instance the use of `goto`, `do while` and `for` loops, requires to declare every variable at the top of a function, and restrains the number of lines, columns and routines. Such restrictions are sometimes leading to the use of obscure code golf tricks 😅
 
+## For students: pitfalls you must avoid
+
+### Don't forget to free the memory in case of failure
+
+Some functions, like `split` and `lstmap`, proceed to several *mallocs*. If one of them fails, you have to free all the memory previously allocated or you'll get memory leaks.
+
+### Prevent every function from crash when null pointer is provided as an input
+
+Some overcautious, opinionated and nonfactual proofreaders have a very personal conception of what is an undefined behaviour. To avoid nasty surprises, you must always define a behaviour which prevents your functions from crash in such a case.
+
+### Don't use nonessential flags for the compilation
+
+Some flags, `-fsanitize=address` for instance, silently add functions to your code, which ones are detected by the Moulinette as cheat (#PrayForMyBSQ 🙏)
+
+### Use only functions from 'Libft' and static functions in your code
+
+If you use a function that is not specified by the subject requirements nor a static function, the Moulinette will detect your function call as cheat, even if you definitely reimplement this function from scratch according to the guidelines (#PrayForMyLibft 🙏)
+
 ## Content of the Libft
 
 ### Mandatory functions from libc
