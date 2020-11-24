@@ -1,7 +1,7 @@
 # Libft
 WIP
 
-`Libft` is my very first project as student to the 19 Coding School.
+`Libft` is my very first project as student of the 19 Coding School.
 
 At 19, syscalls are usually the only functions you can use in your code, and you have to build every project on this basis alone. To avoid recoding everything from scratch every time, the guidelines generally allow students to include their own C library: the *Libft*.
 
