@@ -11,7 +11,7 @@ The project guidelines are available [here](/subjects/en.subject.pdf); note that
 
 ## 'ft', 'lw'… Why did you prefix your functions in that way?
 
-All functions starting with the `ft` prefix are mandatory functions, and are prefixed in this way according to the guidelines.
+All functions starting with `ft` are mandatory functions, and are prefixed in this fashion according to the guidelines.
 
 Functions starting with `lw` are my own implementations of standard functions; the prefix aims to distinguish them from those from the libc.
 
@@ -63,7 +63,7 @@ I strictly follow the *Norm* enforced by the school. The Norm is a laundry list 
 - [x] strtrim
 - [x] substr
 
-### Bonus functions
+### Bonus functions (from the subject)
 
 - [x] lstadd_back
 - [x] lstadd_front
