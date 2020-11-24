@@ -5,7 +5,7 @@ WIP
 
 At 19, syscalls are usually the only functions you can use in your code, and you have to build every project on this basis alone. To avoid recoding everything from scratch every time, the guidelines generally allow students to include their own C library: the *Libft*.
 
-The aim of this project is to code your own C library from scratch and, by reimplementing some of the functions from the standard library, to get used with the specification and its most arcana intricacies 🤓 🧙 
+The aim of this project is to code your own C library from scratch and, by reimplementing some of the functions from the standard library, to get used with the specification and its most arcane intricacies 🤓 🧙 
 
 The project guidelines are available [here](/subjects/en.subject.pdf); note that this repository is NOT fully-compliant with the requirements, mainly for organizational purposes. Students, be aware, if you steal my code, you'll face the consequences 😈 
 
