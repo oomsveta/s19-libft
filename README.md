@@ -27,10 +27,6 @@ I strictly follow the *Norm* enforced by the school. The Norm is a laundry list 
 
 Some functions, like `split` and `lstmap`, proceed to several *mallocs*. If one of them fails, you have to free all the memory previously allocated or you'll get memory leaks.
 
-### ✅ Prevent every function from crash when null pointer is provided as an input
-
-Some overcautious, opinionated and nonfactual proofreaders have a very personal conception of what is an undefined behaviour. To avoid nasty surprises, you must always define a behaviour which prevents your functions from crash in such a case.
-
 ### ✅ Don't use nonessential flags for the compilation
 
 Some flags, `-fsanitize=address` for instance, silently add functions to your code, which ones are detected by the Moulinette as cheat (#PrayForMyBSQ 🙏)
@@ -38,6 +34,10 @@ Some flags, `-fsanitize=address` for instance, silently add functions to your co
 ### ✅ Use only functions from 'Libft' and static functions in your code
 
 If you use a function that is not specified by the subject requirements nor a static function, the Moulinette will detect your function call as cheat, even if you definitely reimplement this function from scratch according to the guidelines (#PrayForMyLibft 🙏)
+
+### ✅ Prevent every function from crash when null pointer is provided as an input
+
+Some overcautious, opinionated and nonfactual proofreaders have a very personal conception of what is an undefined behaviour. To avoid nasty surprises, you must always define a behaviour which prevents your functions from crash in such a case.
 
 ### ✅ Atoi: be aware of the overflows
 
