@@ -39,6 +39,10 @@ Some flags, `-fsanitize=address` for instance, silently add functions to your co
 
 If you use a function that is not specified by the subject requirements nor a static function, the Moulinette will detect your function call as cheat, even if you definitely reimplement this function from scratch according to the guidelines (#PrayForMyLibft 🙏)
 
+### ✅ Atoi: be aware of the overflows
+
+The behaviour of atoi in case of overflow is not an undefined behaviour: the atoi function as specified in the standard returns the result of the asciiz to integer conversion proceeded by the strtol function, which one has a precise behaviour in case of overflow. You can detect your variable is overflowing by checking that its value is positive. If the value becomes negative, hence its an overflow, and you can determine if it's a positive or a negative overflow by considering the sign.
+
 ## Content of the Libft
 
 ### Mandatory functions from libc
