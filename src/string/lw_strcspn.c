@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   lw_strcspn.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lwicket <lwicket@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,40 +12,18 @@
 
 #include "libft.h"
 
-/*
-**	Appends the null-terminated string src to the end of dst. It will append at
-**	most size - strlen(dst) - 1 bytes, NUL-terminating the result.
-**
-**	@param dst	The destination string.
-**	@param src	The source string.
-**	@param size	The size of the dst buffer.
-**	@returns	The initial length of dst plus the length of src.
-*/
-
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+size_t	lw_strcspn(const char *s, const char *charset)
 {
-	const char	*d;
-	const char	*s;
-	size_t		len;
-	size_t		n;
+	size_t ret;
 
-	d = dst;
-	s = src;
-	n = size + 1;
-	while (--n && *dst)
-		dst++;
-	len = dst - d;
-	if (!n--)
-		return (len + ft_strlen(src));
-	while (*src)
+	ret = 0;
+	if (!s || !charset)
+		return (ret);
+	while (*s)
 	{
-		if (n)
-		{
-			*dst++ = *src;
-			n--;
-		}
-		src++;
+		if (ft_strchr(charset, *s++))
+			return (ret);
+		ret++;
 	}
-	*dst = 0;
-	return (len + (src - s));
+	return (ret);
 }

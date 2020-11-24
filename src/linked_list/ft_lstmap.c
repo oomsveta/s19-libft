@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lwicket <lwicket@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,40 +12,30 @@
 
 #include "libft.h"
 
-/*
-**	Appends the null-terminated string src to the end of dst. It will append at
-**	most size - strlen(dst) - 1 bytes, NUL-terminating the result.
-**
-**	@param dst	The destination string.
-**	@param src	The source string.
-**	@param size	The size of the dst buffer.
-**	@returns	The initial length of dst plus the length of src.
-*/
-
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+static void	*identity(void *x)
 {
-	const char	*d;
-	const char	*s;
-	size_t		len;
-	size_t		n;
+	return (x);
+}
 
-	d = dst;
-	s = src;
-	n = size + 1;
-	while (--n && *dst)
-		dst++;
-	len = dst - d;
-	if (!n--)
-		return (len + ft_strlen(src));
-	while (*src)
+t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+{
+	t_list	*new_list;
+
+	if (!lst)
+		return (NULL);
+	if (!f)
+		f = &identity;
+	if (!(new_list = ft_lstnew(f(lst->content))))
+		return (NULL);
+	if (lst->next)
 	{
-		if (n)
+		if (!(new_list->next = ft_lstmap(lst->next, f, del)))
 		{
-			*dst++ = *src;
-			n--;
+			ft_lstdelone(new_list, del);
+			return (NULL);
 		}
-		src++;
 	}
-	*dst = 0;
-	return (len + (src - s));
+	else
+		new_list->next = NULL;
+	return (new_list);
 }

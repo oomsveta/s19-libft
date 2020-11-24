@@ -71,7 +71,7 @@ I strictly follow the *Norm* enforced by the school. The Norm is a laundry list 
 - [x] lstdelone
 - [x] lstiter
 - [x] lstlast
-- [ ] lstmap
+- [x] lstmap
 - [x] lstnew
 - [x] lstsize
 
@@ -80,6 +80,7 @@ I strictly follow the *Norm* enforced by the school. The Norm is a laundry list 
 + lw_isspace
 + lw_isxdigit
 + lw_strcat
++ lw_strcspn
 + lw_strpbrk
 + lw_strspn
 + lw_strtol

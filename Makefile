@@ -8,7 +8,7 @@ CFLAGS = -Wall -Wextra -Werror
 %.o: %.c
 	${CC} ${CFLAGS} -I include -c $^ -o $@
 
-all: ${NAME}
+all: $(NAME)
 
 ${NAME}: ${OBJ}
 	ar -rcs ${NAME} ${OBJ}

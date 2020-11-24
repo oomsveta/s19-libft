@@ -19,7 +19,7 @@
 # define I32_MAX 2147483647
 # define I32_MIN -2147483648
 # define I64_MAX 9223372036854775807
-# define I64_MIN -9223372036854775808
+# define I64_MIN 9223372036854775808U
 
 enum	e_fd { STDIN, STDOUT, STDERR };
 
@@ -63,6 +63,7 @@ void			ft_lstclear(t_list **lst, void (*del)(void *));
 void			ft_lstdelone(t_list *lst, void (*del)(void *));
 void			ft_lstiter(t_list *lst, void (*f)(void *));
 t_list			*ft_lstlast(t_list *lst);
+t_list			*ft_lstmap(t_list *lst, void *(*f)(void *), void (*d)(void *));
 t_list			*ft_lstnew(void *content);
 int				ft_lstsize(t_list *lst);
 
@@ -110,6 +111,7 @@ size_t			ft_strlcat(char *dst, const char *src, size_t size);
 size_t			ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t			ft_strlen(const char *s);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+size_t			lw_strcspn(const char *s, const char *charset);
 char			*lw_strpbrk(const char *s, const char *accept);
 char			*ft_strrchr(const char *s, int c);
 size_t			lw_strspn(const char *s, const char *accept);
