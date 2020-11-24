@@ -5,7 +5,7 @@ WIP
 
 At 19, syscalls are usually the only functions you can use in your code, and you have to build every project on this basis alone. To avoid recoding everything from scratch every time, the guidelines generally allow students to include their own C library: the *Libft*.
 
-The aim of this project is to code your own C library from scratch and, by reimplementing some of the functions from the standard library, to get used with the specification and its most arcane intricacies :nerd_face: 🧙 
+The aim of this project is to code your own C library from scratch and, by reimplementing some of the functions from the standard library, to get used with the specification and its most arcane intricacies 🤓 🧙 
 
 The project guidelines are available [here](/subjects/en.subject.pdf); note that this repository is NOT fully-compliant with the requirements, mainly for organizational purposes. Students, be aware, if you steal my code, you'll face the consequences 😈 
 
@@ -17,7 +17,7 @@ Functions starting with `lw` are my own implementations of standard functions; t
 
 Functions without prefix are just custom functions not based on any specification.
 
-## Why is your coding-style so weird? :vomiting_face:
+## Why is your coding-style so weird? 🤮
 
 I strictly follow the *Norm* enforced by the school. The Norm is a laundry list of coding conventions that students have to follow to the letter on pain of seeing their work sanctioned with a 0. The Norm forbids for instance the use of `goto`, `do while` and `for` loops, requires to declare every variable at the top of a function, and restrains the number of lines, columns and routines. Such restrictions are sometimes leading to the use of obscure code golf tricks 😅
 
