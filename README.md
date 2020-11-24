@@ -30,7 +30,7 @@ Some functions, like `split` and `lstmap`, proceed to several *mallocs*. If one 
 
 Some flags, `-fsanitize=address` for instance, silently add functions to your code, which are detected by the Moulinette as cheat (#PrayForMyBSQ 🙏)
 
-### ✅ Use only functions from 'Libft' and static functions in your code
+### ✅ Only use functions from 'Libft' and static functions in your code
 
 If you use a function that is not specified by the subject requirements nor a static function, the Moulinette will detect your function call as cheat, even if you definitely reimplement this function from scratch according to the guidelines (#PrayForMyLibft 🙏)
 
