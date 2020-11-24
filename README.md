@@ -40,7 +40,7 @@ Some overcautious, opinionated and nonfactual proofreaders have a very personal 
 
 ### ✅ Atoi: be aware of the overflows
 
-The behavior of atoi in case of overflow is not an undefined behavior: the atoi function as specified in the standard returns the result of the asciiz to integer conversion proceeded by the strtol function, which has a precise behavior in case of overflow. You can detect a variable is overflowing by checking that its value is still positive. If the value becomes negative, hence its an overflow, and you can determine if it's a positive or a negative overflow by considering the sign.
+The behavior of atoi in case of overflow is not an undefined behavior: the atoi function as specified in the standard returns the result of the asciiz to integer conversion proceeded by the strtol function, which has a precise behavior in case of overflow. You can detect a variable is overflowing by checking that its value is still positive. If the value becomes negative, then there is an overflow, and you can determine if it's a positive or a negative overflow by considering the sign.
 
 ## Content of the Libft
 
