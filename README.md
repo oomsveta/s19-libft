@@ -1,5 +1,4 @@
 # Libft
-WIP
 
 `Libft` is my very first project as a student of the 19 Coding School.
 
@@ -29,7 +28,7 @@ Some functions, like `split` and `lstmap`, proceed to several *mallocs*. If one 
 
 ### ✅ Don't use nonessential flags for the compilation
 
-Some flags, `-fsanitize=address` for instance, silently add functions to your code, which ones are detected by the Moulinette as cheat (#PrayForMyBSQ 🙏)
+Some flags, `-fsanitize=address` for instance, silently add functions to your code, which are detected by the Moulinette as cheat (#PrayForMyBSQ 🙏)
 
 ### ✅ Use only functions from 'Libft' and static functions in your code
 
