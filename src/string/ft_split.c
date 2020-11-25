@@ -50,17 +50,18 @@ char			**ft_split(char const *s, char c)
 		return (NULL);
 	ret[len] = NULL;
 	i = 0;
-	while (*s)
-	{
-		start = s;
-		if (*s++ != c)
+	if (s)
+		while (*s)
 		{
-			while (*s != c && *s)
-				s++;
-			if (!(ret[i] = ft_substr(start, 0, s - start)))
-				return (free_all(ret, i));
-			i++;
+			start = s;
+			if (*s++ != c)
+			{
+				while (*s != c && *s)
+					s++;
+				if (!(ret[i] = ft_substr(start, 0, s - start)))
+					return (free_all(ret, i));
+				i++;
+			}
 		}
-	}
 	return (ret);
 }
