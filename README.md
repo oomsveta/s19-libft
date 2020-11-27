@@ -47,6 +47,10 @@ If you use a function that is not specified by the subject requirements nor a st
 
 The behavior of atoi in case of overflow is not an undefined behavior: the atoi function as specified in the standard returns the result of the asciiz to integer conversion proceeded by the strtol function, which has a precise behavior in case of overflow. You can detect a variable is overflowing by checking that its value is still positive. If the value becomes negative, then there is an overflow, and you can determine if it's a positive or a negative overflow by considering the sign.
 
+### ✅ Split: allocate no more than necessary
+
+Most of the split implementations from students are using a function to count the number of 'words' in their string and thereby the size of the array to create. You must test this function to ensure it will never return a greater value than needed, otherwise it will result in a waste of memory.
+
 ### ✅ Prevent every function from crashing when null pointer is provided as an input
 
 Some proofreaders have a very personal conception of what is an undefined behavior. To avoid nasty surprises, you must always define a behavior which prevents your functions from crashing in such a case.
