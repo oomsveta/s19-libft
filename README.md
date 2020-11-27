@@ -29,7 +29,7 @@ If a malloc fails, it will return NULL and you won't be able to do anything else
 if (!(ret = malloc(size)))
     return (NULL);
 ```
-To ensure you don't forget to check any malloc, use the command `cat *.c | grep malloc` which lists every line a malloc occurs in your code.
+To ensure you don't forget to check any malloc, you can use the command `cat *.c | grep malloc` which lists every line a malloc occurs in your code.
 
 ### ✅ Don't forget to free the memory in case of failure
 
