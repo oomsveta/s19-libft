@@ -22,6 +22,15 @@ I strictly follow the *Norm* enforced by the school. The Norm is a laundry list 
 
 ## For students: pitfalls you must avoid
 
+### ✅ Ensure that every malloc is successful, exit the function if not
+
+If a malloc fails, it will return NULL and you won't be able to use it anymore, therefore you have to exit the function if it happens. You can easily check the success of the allocation in this way:
+```c
+if (!(ret = malloc(size)))
+    return (NULL);
+```
+To ensure you don't forget to check any malloc, use the command `cat *.c | grep malloc` which lists every line a malloc occurs in your code.
+
 ### ✅ Don't forget to free the memory in case of failure
 
 Some functions, like `split` and `lstmap`, proceed to several *mallocs*. If one of them fails, you have to free all the memory previously allocated or you'll get memory leaks.
