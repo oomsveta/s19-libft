@@ -24,7 +24,7 @@ I strictly follow the *Norm* enforced by the school. The Norm is a laundry list 
 
 ### ✅ Ensure that every malloc is successful, exit the function if not
 
-If a malloc fails, it will return NULL and you won't be able to do anything else, therefore you have to exit the function. You can easily check the success of the allocation this way:
+If a malloc fails, it will return NULL and you won't be able to do anything else, therefore you must exit the function. You can easily check the success of the allocation this way:
 ```c
 if (!(ret = malloc(size)))
     return (NULL);
