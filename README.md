@@ -40,11 +40,11 @@ The behavior of atoi in case of overflow is not an undefined behavior: the atoi 
 
 ### ✅ Prevent every function from crashing when null pointer is provided as an input
 
-Some overcautious, opinionated and nonfactual proofreaders have a very personal conception of what is an undefined behavior. To avoid nasty surprises, you must always define a behavior which prevents your functions from crashing in such a case.
+Some proofreaders have a very personal conception of what is an undefined behavior. To avoid nasty surprises, you must always define a behavior which prevents your functions from crashing in such a case.
 
 ### ✅ Don't follow the previous recommendation
 
-Some overcautious, opinionated and nonfactual proofreaders have a very personal conception of what is an undefined behavior, and will penalize you when your code doesn't crash whereas the same function from libc does it… so, gl hf 🤞
+Some proofreaders have a very personal conception of what is an undefined behavior, and will penalize you when your code doesn't crash whereas the same function from libc does it… so, gl hf 🤞
 
 ## Content of the Libft
 
