@@ -1,6 +1,6 @@
 # Libft
 
-`Libft` is my very first project as a student of the 19 Coding School.
+***Libft*** is my very first project as a student of the 19 Coding School.
 
 At 19, syscalls are usually the only functions you can use in your code, and you have to build every project on this basis alone. To avoid recoding everything from scratch every time, the guidelines generally allow students to include their own C library: the *Libft*.
 
@@ -24,7 +24,7 @@ I strictly follow the *Norm* enforced by the school. The Norm is a laundry list 
 
 ### ✅ Ensure that every malloc is successful, exit the function if not
 
-If a malloc fails, it will return NULL and you won't be able to use it anymore, therefore you have to exit the function if it happens. You can easily check the success of the allocation in this way:
+If a malloc fails, it will return NULL and you won't be able to do anything else, therefore you have to exit the function if it happens. You can easily check the success of the allocation this way:
 ```c
 if (!(ret = malloc(size)))
     return (NULL);
