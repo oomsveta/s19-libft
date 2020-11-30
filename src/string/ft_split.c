@@ -31,6 +31,7 @@ static void		*free_all(char **arr, int i)
 {
 	while (i--)
 		free(arr[i]);
+	free(arr);
 	return (NULL);
 }
 
