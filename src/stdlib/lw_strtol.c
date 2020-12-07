@@ -45,12 +45,12 @@ long int	lw_strtol(const char *nptr, char **endptr, int base)
 	int			sign;
 	int			i;
 	int			j;
-	char		digits[37];
+	char		*digits;
 
 	ret = 0;
 	sign = 1;
 	j = 1;
-	ft_strlcpy(digits, "0123456789abcdefghijklmnopqrstuvwxyz", 37);
+	digits = (char[]){"0123456789abcdefghijklmnopqrstuvwxyz"};
 	skip_whitespaces(&nptr);
 	if (*nptr == '-' || *nptr == '+')
 		*nptr++ == '-' && (sign = -1);
