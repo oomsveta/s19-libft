@@ -48,6 +48,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		}
 		src++;
 	}
-	*dst = 0;
+	*dst = '\0';
 	return (d_len + (src - s));
 }
