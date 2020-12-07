@@ -27,16 +27,16 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	const char	*d;
 	const char	*s;
-	size_t		len;
+	size_t		d_len;
 
 	d = dst;
 	s = src;
 	size++;
 	while (--size && *dst)
 		dst++;
-	len = dst - d;
+	d_len = dst - d;
 	if (!size--)
-		return (len + ft_strlen(src));
+		return (d_len + ft_strlen(src));
 	while (*src)
 	{
 		if (size)
@@ -47,5 +47,5 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		src++;
 	}
 	*dst = 0;
-	return (len + (src - s));
+	return (d_len + (src - s));
 }
