@@ -14,5 +14,5 @@
 
 int	lw_isxdigit(int c)
 {
-	return ((c >= '0' && c <= '9') || ((c |= 32) >= 'a' && c <= 'f'));
+	return ((c >= '0' && c <= '9') || ((c |= 0x20) >= 'a' && c <= 'f'));
 }

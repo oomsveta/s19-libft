@@ -14,5 +14,5 @@
 
 int	ft_toupper(int c)
 {
-	return (ft_isalpha(c) ? (c | 32) - 32 : c);
+	return (ft_isalpha(c) ? (c | 0x20) - 32 : c);
 }

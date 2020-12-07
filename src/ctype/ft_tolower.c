@@ -14,5 +14,5 @@
 
 int	ft_tolower(int c)
 {
-	return (ft_isalpha(c) ? c | 32 : c);
+	return (ft_isalpha(c) ? c | 0x20 : c);
 }
