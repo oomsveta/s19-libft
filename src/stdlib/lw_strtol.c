@@ -44,10 +44,12 @@ long int	lw_strtol(const char *nptr, char **endptr, int base)
 	long int	ret;
 	int			sign;
 	int			i;
+	int			j;
 	char		digits[37];
 
 	ret = 0;
 	sign = 1;
+	j = 1;
 	ft_strlcpy(digits, "0123456789abcdefghijklmnopqrstuvwxyz", 37);
 	skip_whitespaces(&nptr);
 	if (*nptr == '-' || *nptr == '+')
@@ -56,7 +58,7 @@ long int	lw_strtol(const char *nptr, char **endptr, int base)
 	if (base < 2 || base > 36)
 		return (0);
 	while (~(i = get_index_in_base(*nptr++, base, digits)))
-		if ((ret = ret * base + i) < 0)
+		if ((ret = ret * base + i) < 0 || ++j > 19)
 		{
 			ret = (~sign ? I64_MAX : I64_MIN);
 			break ;
