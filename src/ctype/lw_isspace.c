@@ -21,5 +21,5 @@
 
 int	lw_isspace(int c)
 {
-	return (c == 32 || (c > 8 && c < 14));
+	return (c == ' ' || (c >= '\t' && c <= '\r'));
 }
