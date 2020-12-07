@@ -19,9 +19,9 @@
 **	@param dst	The destination string.
 **	@param src	The source string.
 **	@param size	The size of the dst buffer.
-**	@returns	The initial length of dst plus the length of src.
+**	@returns	The length of src plus the initial length of dst or size if
+**				size is smaller than the length of dst.
 */
-
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
