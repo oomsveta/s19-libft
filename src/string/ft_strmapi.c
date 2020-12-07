@@ -12,13 +12,21 @@
 
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+static char	identity(unsigned int i, char x)
+{
+	(void)i;
+	return (x);
+}
+
+char		*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char	*ret;
 	size_t	len;
 
-	if (!s || !f)
+	if (!s)
 		return (NULL);
+	if (!f)
+		f = &identity;
 	len = ft_strlen(s);
 	if (!(ret = malloc(len + 1)))
 		return (NULL);
