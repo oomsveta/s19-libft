@@ -33,7 +33,7 @@ To ensure you don't forget to check any malloc, you can use the command `cat *.c
 
 ### ✅ Don't forget to free the memory in case of failure
 
-Some functions, like `split` and `lstmap`, proceed to several *mallocs*. If one of them fails, you have to free all the memory previously allocated or you'll get memory leaks.
+Some functions, like `split` and `lstmap`, proceed to several *mallocs*. If one of them fails, you have to free all the memory previously allocated (and their container ⚠) or you'll get memory leaks.
 
 ### ✅ Don't use nonessential flags for the compilation
 
