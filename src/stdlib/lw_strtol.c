@@ -50,7 +50,7 @@ long int	lw_strtol(const char *nptr, char **endptr, int base)
 	ret = 0;
 	sign = 1;
 	j = 0;
-	digits = (char[]){"0123456789abcdefghijklmnopqrstuvwxyz"};
+	digits = (char*)"0123456789abcdefghijklmnopqrstuvwxyz";
 	skip_whitespaces(&nptr);
 	if (*nptr == '-' || *nptr == '+')
 		*nptr++ == '-' && (sign = -1);
