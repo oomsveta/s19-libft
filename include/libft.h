@@ -29,6 +29,13 @@ typedef struct	s_list
 	struct s_list	*next;
 }				t_list;
 
+typedef struct	s_vec
+{
+	void	*content;
+	size_t	length;
+	size_t	capacity;
+}				t_vec;
+
 /*
 **	CTYPE
 */
