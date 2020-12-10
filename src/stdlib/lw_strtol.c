@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static int	get_index_in_base(char d, int base, char *digits)
+static int	get_index_in_base(char d, int base, const char *digits)
 {
 	char	*ptr;
 	int		index;
@@ -45,12 +45,12 @@ long int	lw_strtol(const char *nptr, char **endptr, int base)
 	int			sign;
 	int			i;
 	int			j;
-	char		*digits;
+	const char	*digits;
 
 	ret = 0;
 	sign = 1;
 	j = 0;
-	digits = (char*)"0123456789abcdefghijklmnopqrstuvwxyz";
+	digits = "0123456789abcdefghijklmnopqrstuvwxyz";
 	skip_whitespaces(&nptr);
 	if (*nptr == '-' || *nptr == '+')
 		*nptr++ == '-' && (sign = -1);
