@@ -133,3 +133,6 @@ Some proofreaders have a very personal conception of what is an undefined behavi
 + trim
 + trim_end
 + trim_start
++ u8_vec_new
++ u8_vec_push
++ u8_vec_resize
