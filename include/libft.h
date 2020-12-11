@@ -29,12 +29,12 @@ typedef struct	s_list
 	struct s_list	*next;
 }				t_list;
 
-typedef struct	s_vec
+typedef struct	s_u8_vec
 {
-	void	*content;
-	size_t	length;
-	size_t	capacity;
-}				t_vec;
+	unsigned char	*content;
+	size_t			length;
+	size_t			capacity;
+}				t_u8_vec;
 
 /*
 **	CTYPE
@@ -78,6 +78,8 @@ int				ft_lstsize(t_list *lst);
 **	MATHS
 */
 
+long int		min(long int a, long int b);
+
 /*
 **	STDIO
 */
@@ -95,6 +97,7 @@ void			ft_putstr_fd(char *s, int fd);
 int				ft_atoi(const char *nptr);
 void			*ft_calloc(size_t nmemb, size_t size);
 char			*ft_itoa(int n);
+void			*lw_realloc(void *ptr, size_t current_size, size_t new_size);
 long int		lw_strtol(const char *nptr, char **endptr, int base);
 
 /*
