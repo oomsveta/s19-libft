@@ -129,4 +129,12 @@ char			*ft_strtrim(char const *s1, char const *set);
 char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*lw_strcat(char *dest, const char *src);
 
+/*
+**	VECTOR
+*/
+
+t_u8_vec		*u8_vec_new(size_t capacity);
+int				u8_vec_push(t_u8_vec *vec, unsigned char c);
+int				u8_vec_resize(t_u8_vec *vec, size_t size);
+
 #endif
