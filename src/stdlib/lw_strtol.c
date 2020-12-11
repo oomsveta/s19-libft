@@ -58,14 +58,11 @@ long int	lw_strtol(const char *nptr, char **endptr, int base)
 		return (0);
 	max = LONG_MAX / base;
 	while (~(i = get_index_in_base(*nptr++, base, digits)))
-	{
-		if (ret + i > max)
+		if (ret > max || (ret = ret * base + i) < 0)
 		{
 			ret = (~sign ? LONG_MAX : LONG_MIN);
 			break ;
 		}
-		ret = ret * base + i;
-	}
 	if (endptr)
 		*endptr = (char *)nptr;
 	return (ret * sign);
