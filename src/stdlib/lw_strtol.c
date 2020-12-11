@@ -59,7 +59,7 @@ long int	lw_strtol(const char *nptr, char **endptr, int base)
 	max = LONG_MAX / base;
 	while (~(i = get_index_in_base(*nptr++, base, digits)))
 	{
-		if (ret > max)
+		if (ret + i > max)
 		{
 			ret = (~sign ? LONG_MAX : LONG_MIN);
 			break ;
