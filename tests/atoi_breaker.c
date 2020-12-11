@@ -6,11 +6,11 @@
 int main(void)
 {
 	int std, ft;
-	char *test_cases[] = {"18446744073709552000", "1844674407370955199", "-0", "++5", "+-5", "00512", "23058430092136939529", "\t\v\r\n -5", "-9223372036854775808", "9999999999999999999", "2147484160", "6a"};
+	char *test_cases[] = {"18446744073709552000", "1844674407370955199", "-0", "++5", "+-5", "00512", "23058430092136939529", "\t\v\r\n -5", "-9223372036854775808", "9999999999999999999", "2147484160", "6a", ""};
 	int length = sizeof test_cases / sizeof *test_cases;
 	int err_count = 0;
 
-	if (sizeof ft_atoi("test lol") != 4)
+	if (sizeof ft_atoi("") != sizeof atoi(""))
 	{
 		puts("[\e[91mERR\e[0m]\tYour atoi doesn't return an int\n");
 		err_count++;
