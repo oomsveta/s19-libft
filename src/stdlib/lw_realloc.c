@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*
+** ⚠ Note that this realloc is NOT compliant with the standard
+*/
+
 void	*lw_realloc(void *ptr, size_t current_size, size_t new_size)
 {
 	void *ret;
