@@ -28,4 +28,6 @@ int main(void)
 		printf("\e[91mTests failed with \e[93m%d\e[91m error(s)\e[0m\n", err_count);
 	else
 		puts("\e[32mEverything seems to work :)\e[0m");
+	
+	return (0);
 }
