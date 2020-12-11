@@ -15,11 +15,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-
-# define I32_MAX 2147483647
-# define I32_MIN -2147483648
-# define I64_MAX 9223372036854775807
-# define I64_MIN 9223372036854775808U
+# include <limits.h>
 
 enum	e_fd { STDIN, STDOUT, STDERR };
 
