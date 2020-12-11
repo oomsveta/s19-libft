@@ -42,14 +42,13 @@ static void	check_base_literal(const char **nptr, int *base)
 long int	lw_strtol(const char *nptr, char **endptr, int base)
 {
 	long int	ret;
+	long int	max;
 	int			sign;
 	int			i;
-	int			j;
 	const char	*digits;
 
 	ret = 0;
 	sign = 1;
-	j = 0;
 	digits = "0123456789abcdefghijklmnopqrstuvwxyz";
 	skip_whitespaces(&nptr);
 	if (*nptr == '-' || *nptr == '+')
@@ -57,12 +56,16 @@ long int	lw_strtol(const char *nptr, char **endptr, int base)
 	check_base_literal(&nptr, &base);
 	if (base < 2 || base > 36)
 		return (0);
+	max = LONG_MAX / base;
 	while (~(i = get_index_in_base(*nptr++, base, digits)))
-		if ((ret = ret * base + i) < 0 || ++j > 19)
+	{
+		if (ret > max)
 		{
-			ret = (~sign ? I64_MAX : I64_MIN);
+			ret = (~sign ? LONG_MAX : LONG_MIN);
 			break ;
 		}
+		ret = ret * base + i;
+	}
 	if (endptr)
 		*endptr = (char *)nptr;
 	return (ret * sign);
