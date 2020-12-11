@@ -10,16 +10,23 @@ int main(void)
 	int length = sizeof test_cases / sizeof *test_cases;
 	int err_count = 0;
 
+	if (sizeof ft_atoi("test lol") != 4)
+	{
+		puts("[\e[91mERR\e[0m]\tYour atoi doesn't return an int\n");
+		err_count++;
+	}
+
 	for (int i = 0; i < length; i++)
 	{
 		if ((std = atoi(test_cases[i])) != (ft = ft_atoi(test_cases[i])))
 		{
-			printf("[\e[91mERR\e[0m]\tTest case:\t\"%s\"\n\tExpected:\t%d\n\tObtained:\t%d\n\n", test_cases[i], std, ft);
+			printf("[\e[91mERR\e[0m]\tTest case:\t\"%s\"\n\tExpected :\t%d\n\tObtained :\t%d\n\n", test_cases[i], std, ft);
 			err_count++;
 		}
 	}
+
 	if (err_count)
-		printf("\e[91mTests failed with \e[93m%d\e[91m error(s)\e[0m", err_count);
+		printf("\e[91mTests failed with \e[93m%d\e[91m error(s)\e[0m\n", err_count);
 	else
 		puts("\e[32mEverything seems to work :)\e[0m");
 }
