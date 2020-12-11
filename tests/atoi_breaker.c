@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <limits.h>
+#include "libft.h"
+
+int main(void)
+{
+	int std, ft;
+	char *test_cases[] = {"18446744073709552000", "1844674407370955199", "-0", "++5", "+-5", "00512", "23058430092136939529", "\t\v\r\n -5", "-9223372036854775808", "9999999999999999999", "2147484160", "6a"};
+	int length = sizeof test_cases / sizeof *test_cases;
+	int err_count = 0;
+
+	for (int i = 0; i < length; i++)
+	{
+		if ((std = atoi(test_cases[i])) != (ft = ft_atoi(test_cases[i])))
+		{
+			printf("[\e[91mERR\e[0m]\tTest case:\t\"%s\"\n\tExpected:\t%d\n\tObtained:\t%d\n\n", test_cases[i], std, ft);
+			err_count++;
+		}
+	}
+	if (err_count)
+		printf("\e[91mTests failed with \e[93m%d\e[91m error(s)\e[0m", err_count);
+	else
+		puts("\e[32mEverything seems to work :)\e[0m");
+}
