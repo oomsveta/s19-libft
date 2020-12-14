@@ -127,6 +127,7 @@ Some proofreaders have a very personal conception of what is an undefined behavi
 + lw_strpbrk
 + lw_strspn
 + lw_strtol
++ nt_memfrob
 + min
 + repeat
 + skip_whitespaces
