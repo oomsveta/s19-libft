@@ -110,6 +110,7 @@ void			*ft_memmove(void *dest, const void *src, size_t n);
 void			*lw_mempcpy(void *dest, const void *src, size_t len);
 void			*ft_memset(void *s, int c, size_t n);
 char			**ft_split(char const *s, char c);
+void			*lw_stpcpy(char *dest, const char *src);
 char			*ft_strchr(const char *s, int c);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
 char			*ft_strnstr(const char *s1, const char *s2, size_t len);

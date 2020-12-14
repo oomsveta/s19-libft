@@ -123,6 +123,7 @@ Some proofreaders have a very personal conception of what is an undefined behavi
 + lw_isxdigit
 + lw_mempcpy
 + lw_realloc
++ lw_stpcpy
 + lw_strcat
 + lw_strcspn
 + lw_strpbrk
