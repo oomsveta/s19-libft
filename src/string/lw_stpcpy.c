@@ -18,8 +18,6 @@
 
 void	*lw_stpcpy(char *dest, const char *src)
 {
-	while (*dest)
-		dest++;
 	while ((*dest++ = *src++))
 		;
 	return (--dest);
