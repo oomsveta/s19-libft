@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <limits.h>
+# include <stdarg.h>
 
 enum	e_fd { STDIN, STDOUT, STDERR };
 
@@ -132,6 +133,7 @@ char			*lw_strcat(char *dest, const char *src);
 **	VECTOR
 */
 
+int				u8_vec_cat(t_u8_vec *vec, char *str);
 t_u8_vec		*u8_vec_new(size_t capacity);
 int				u8_vec_push(t_u8_vec *vec, unsigned char c);
 int				u8_vec_resize(t_u8_vec *vec, size_t size);
